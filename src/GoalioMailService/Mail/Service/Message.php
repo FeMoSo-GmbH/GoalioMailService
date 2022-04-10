@@ -150,7 +150,8 @@ class Message implements ServiceManagerAwareInterface {
             ->setEncoding($encoding)
             ->setSubject($subject)
             ->setBody($body)
-            ->setTo($to);
+            ->setTo($to)
+            ->setFrom($from['email']);
 
         return $message;
     }
